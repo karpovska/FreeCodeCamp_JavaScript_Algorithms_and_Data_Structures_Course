@@ -13,5 +13,9 @@ const HIGH_TEMPERATURES = {
     tomorrow: { low: 68, high: 80 }
   };  
     
-  const { today: { low: lowToday, high: highToday }} = LOCAL_FORECAST; 
+  const { today: { low: lowToday, high: highTodayy }} = LOCAL_FORECAST; 
+
+  let a = 8, b = 6;
+  [a, b] = [b, a];
+  console.log(`a: ${a}, b: ${b}`);
   
