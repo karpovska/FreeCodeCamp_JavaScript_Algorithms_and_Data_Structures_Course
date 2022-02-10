@@ -17,3 +17,7 @@ let quoteSample = "Beware of bugs in the above code; I have only proved it corre
 let vowelRegex = /[aeiou]/ig; // Change this line
 let fourthResult = quoteSample.match(vowelRegex); // Change this line
 console.log(fourthResult);
+
+let quoteSamples = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/ig; 
+console.log(quoteSamples.match(alphabetRegex)); 
