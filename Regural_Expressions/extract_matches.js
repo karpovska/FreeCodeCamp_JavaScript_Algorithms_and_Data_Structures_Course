@@ -12,3 +12,8 @@ let exampleStr = "Let's have fun with regular expressions!";
 let unRegex = /.un/; 
 let thirdResult = unRegex.test(exampleStr);
 console.log(thirdResult);
+
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/ig; // Change this line
+let fourthResult = quoteSample.match(vowelRegex); // Change this line
+console.log(fourthResult);
