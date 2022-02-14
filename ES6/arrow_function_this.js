@@ -34,3 +34,49 @@ console.log("Donors above 18", donate);
 
 const sum = donated.reduce((total, amount) => total + amount.donation, 0);
 console.log("Total donations", sum);
+
+const parent = {
+    //add property
+    mom_name: "Smantha Quinn",
+
+    //add method to return parent
+    mother: () => {
+        return `${this.mom_name} is my mother`;
+    }
+}
+console.log(parent.mother());
+
+function User() {
+    (this.name = "John Doe"),
+    (this.score = 20),
+    (this.sayUser = function () {
+        //when `this` is accessible
+        console.log(this.name);
+
+        //a variable that doesn't shadow `innerFunction`
+        //let self = this;
+        let innerFunction = () => {
+            //when `this` refers to the global scope
+            console.log(this.name);
+        }
+
+        innerFunction();
+    })
+}
+let name = new User();
+name.sayUser();
+
+let animals = {
+    //add property
+    domesticAnimals: ["cat", "dog", "cow", "goat", "sheep", "donkey", "pig", "horse"],
+    //add method
+    printDomesticAnimals: function () {
+        console.log("inside printDomesticAnimals", this);
+        //print after 3 second
+        setTimeout(() => {
+            console.log(this.domesticAnimals.join(" - "));
+            //console.log("inside setTimeout", this);
+        }, 3000);
+    }
+}
+animals.printDomesticAnimals();
