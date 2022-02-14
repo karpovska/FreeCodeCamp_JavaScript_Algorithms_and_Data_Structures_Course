@@ -80,3 +80,9 @@ let animals = {
     }
 }
 animals.printDomesticAnimals();
+
+const sayName = () => ({    
+    name: "John Doe",
+    age: 26,    
+})
+console.log(sayName().name);
