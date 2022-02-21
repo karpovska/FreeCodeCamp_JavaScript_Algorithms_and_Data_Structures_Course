@@ -21,3 +21,7 @@ console.log(fourthResult);
 let quoteSamples = "The quick brown fox jumps over the lazy dog.";
 let alphabetRegex = /[a-z]/ig; 
 console.log(quoteSamples.match(alphabetRegex)); 
+
+let quoteSample3 = "3 blind mice.";
+let myRegex = /[^aeiou0-9]/gi; // Change this line
+let result = quoteSample3.match(myRegex); // Change this line
