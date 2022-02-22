@@ -25,3 +25,7 @@ console.log(quoteSamples.match(alphabetRegex));
 let quoteSample3 = "3 blind mice.";
 let myRegex = /[^aeiou0-9]/gi; // Change this line
 let result = quoteSample3.match(myRegex); // Change this line
+
+let difficultSpelling = "Mississippi";
+let newRegex = /s+/g; // Change this line
+console.log(difficultSpelling.match(newRegex));
