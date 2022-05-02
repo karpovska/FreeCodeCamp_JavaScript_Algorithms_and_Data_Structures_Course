@@ -22,3 +22,11 @@ function Cat(name) {
       console.log("nom nom nom");
     }
   };
+
+  function Dog() { }
+
+  let duck = Object.create(Animal.prototype);
+  
+  let beagle = new Dog();
+
+  Dog.prototype = Object.create(Animal.prototype);
